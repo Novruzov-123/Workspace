@@ -12,12 +12,13 @@ function bs() {
     });
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch("./sass/**/*.sass", serveSass);
+    gulp.watch("./sass/**/*.scss", serveSass);
     gulp.watch("./js/*.js").on('change', browserSync.reload);
     };
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return gulp.src("./sass/*.sass")
+  return gulp.src("./sass/**/*.sass", "./sass/**/*.scss")
       .pipe(sass())
       .pipe(autoprefixer({
         cascade: false
