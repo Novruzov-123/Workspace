@@ -341,7 +341,7 @@ template {
   align-items: center; }
 
 .logo {
-  background-color: #E3B873;
+  color: #E3B873;
   text-transform: uppercase; }
 
 .nav__item {
@@ -355,6 +355,31 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.hero {
+  position: relative;
+  background: #131313 url("../img/hero-img.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff; }
+  .hero__instagram {
+    position: absolute;
+    height: 100%;
+    max-width: 80px;
+    left: 0;
+    top: 0; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .instagram__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E3B873;
+    transform: rotate(-90deg); }
+
+.title {
+  margin: 0; }
 
 body {
   font-family: Futura Book, sans-serif;
