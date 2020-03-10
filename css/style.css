@@ -328,12 +328,15 @@ template {
     color: #ffffff; }
 
 .container {
-  max-width: 1256px;
-  margin: auto; }
+  max-width: 1356px;
+  margin: auto 0; }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 24px 0;
+  z-index: 1; }
 
 .menu {
   display: flex;
@@ -357,10 +360,13 @@ template {
   margin-right: 45px; }
 
 .hero {
-  position: relative;
   background: #131313 url("../img/hero-img.jpg") no-repeat center/cover;
+  max-width: 1356px;
+  width: 100%;
   height: 100vh;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-top: 100px;
+  position: relative; }
   .hero__instagram {
     position: absolute;
     height: 100%;
@@ -371,7 +377,8 @@ template {
 .instagram {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #131313; }
   .instagram__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -380,6 +387,9 @@ template {
 
 .title {
   margin: 0; }
+
+*, *:beforem *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: Futura Book, sans-serif;
