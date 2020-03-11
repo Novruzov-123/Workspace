@@ -322,7 +322,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -348,7 +349,7 @@ html {
 
 body {
   font-family: Futura Book, sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -385,7 +386,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 2.85rem; }
   .nav__item:hover {
     color: #E3B873;
     transition: color 0.2s; }
@@ -424,8 +425,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313;
     display: flex;
     justify-content: center;
@@ -442,10 +443,11 @@ body {
       border-radius: 50%;
       margin-left: 12px; }
   .hero__content {
-    max-width: 670px;
+    margin-left: 4.28rem;
+    max-width: 47.85rem;
     position: relative; }
   .hero__text {
-    font-size: 22px;
+    font-size: 1.57rem;
     max-width: 600px; }
   .hero__button {
     margin-right: 20px; }
@@ -474,6 +476,41 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.857rem; }
   .title--primary {
     color: #E3B873; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 570px) {
+  .contacts__button {
+    display: none; }
+  .contacts__phone {
+    margin-right: 0;
+    text-decoration: none;
+    color: #ffffff; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin: 2.28rem; }
+  .hero__content {
+    max-width: 22.86rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.86rem; }
+  .hero__scroll-down {
+    display: none; } }
