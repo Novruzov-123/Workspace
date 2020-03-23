@@ -666,7 +666,6 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
-
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
